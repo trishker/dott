@@ -1,25 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created with the following command
 
-Things you may want to cover:
+```
+$ rails new dott -T -d postgresql
+```
 
-* Ruby version
+# Database
 
-* System dependencies
+```
+$ bin/rake db:create RAILS_ENV=development
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# dott
+Using RSpec so add gem to Gemfile and run bundle install. Then
+```
+$ rails generate rspec:install
+```
