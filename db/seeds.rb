@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+messages = Message.create([
+  { message_title: "Visualise The Year You Want",
+    message_body: "Imagine the year ahead in as much detail as you possibly can. What would you like to achieve? Look at all the things which fill your life. Can you offload something which doesn’t fit with your goals? Perhaps you can add an activity that does. Live the life you actually want.",
+    message_category: "Behaviour", weekend?: true
+  }
+])

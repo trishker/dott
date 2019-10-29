@@ -10,17 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_23_144627) do
+ActiveRecord::Schema.define(version: 2019_10_28_134129) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "messages", force: :cascade do |t|
     t.string "message_title"
-    t.string "message_body"
+    t.text "message_body"
     t.string "message_category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "weekend?", default: false
   end
 
 end
